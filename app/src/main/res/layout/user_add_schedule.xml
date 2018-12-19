@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_color"
+        android:minHeight="?attr/actionBarSize"
+        android:textAppearance="@style/TextAppearance.FontPath.Bold"
+        android:theme="@style/ActionBarThemeOverlay" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/add_vacation"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/title1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:text="@string/plan"/>
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/dest" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/in_date"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:inputType="date"
+            android:layout_marginStart="11dp"
+            android:hint="@string/date1"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/btn_date"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/in_date"
+            android:padding="5dp"
+            android:src="@drawable/ic_calender"
+            android:tint="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/in_date2"
+            android:layout_width="223dp"
+            android:inputType="date"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:hint="@string/date2"
+            android:focusable="false"/>
+
+        <ImageView
+            android:id="@+id/btn_date2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/in_date2"
+            android:padding="5dp"
+            android:src="@drawable/ic_calender"
+            android:tint="@color/colorAccent"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:text="@string/notif"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/in_time"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:inputType="time"
+            android:layout_marginStart="11dp"
+            android:hint="@string/time"
+            android:focusable="false"/>
+
+        <ImageView
+            android:id="@+id/btn_time"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/in_time"
+            android:padding="5dp"
+            android:src="@drawable/ic_time"
+            android:tint="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+        <CheckBox
+            android:id="@+id/is_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hari1"
+            android:layout_marginRight="10dp"/>
+        <CheckBox
+            android:id="@+id/is_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/is_1"
+            android:text="@string/hari3"
+            android:layout_marginRight="10dp"/>
+
+        <CheckBox
+            android:id="@+id/is_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/is_3"
+            android:text="@string/hari7" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/btnSimpanNotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/btn_save"
+            android:textColor="@color/colorPrimary"
+            android:theme="@style/MyButton2" />
+
+        <Button
+            android:id="@+id/btnBatalNotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/btnSimpanNotif"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/colorPrimary"
+            android:theme="@style/MyButton2" />
+    </RelativeLayout>
+
+
+</LinearLayout>

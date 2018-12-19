@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pindah"
+    android:layout_margin="10dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_color"
+        android:minHeight="?attr/actionBarSize"
+        android:textAppearance="@style/TextAppearance.FontPath.Bold"
+        app:theme="@style/ActionBarThemeOverlay" />
+
+    <LinearLayout
+        android:id="@+id/nojadwal"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/noImgSch"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:tint="#949494"
+            android:src="@drawable/ic_schedule"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/noImgSch"
+            android:text="@string/noschedule"/>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addScheduleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:tint="@android:color/white"
+        app:fabSize="normal"
+        android:layout_gravity="bottom|end"
+        app:rippleColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/scheduleListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#d1d1d1"
+        android:dividerHeight="1dp"
+         />
+
+    <FrameLayout
+        android:id="@+id/rep"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

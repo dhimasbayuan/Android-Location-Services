@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listDest"
+            android:textSize="20sp"
+            android:text="@string/dest"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/listDest"
+            android:layout_height="wrap_content"
+            android:id="@+id/listTglBrgk"
+            android:textSize="16sp"
+            android:text="@string/date1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listDest"
+            android:layout_toRightOf="@+id/listTglBrgk"
+            android:id="@+id/spc"
+            android:textSize="16sp"
+            android:text="  -  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listDest"
+            android:layout_toRightOf="@+id/spc"
+            android:id="@+id/listTglPlg"
+            android:textSize="16sp"
+            android:text="@string/date2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listTime"
+            android:textSize="16sp"
+            android:layout_below="@+id/listTglBrgk"
+            android:text="@string/time"/>
+
+        <ImageView
+            android:id="@+id/hpsList"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:tint="#FF808080"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
